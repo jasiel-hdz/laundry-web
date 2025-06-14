@@ -1,0 +1,20 @@
+<div class="container mx-auto w-11/12 md:9/12 lg:w-8/12 flex flex-col justify-center items-center my-16 lg:my-32">
+  <h2 class="text-4xl uppercase font-bold text-brand-500 mb-4">TESTIMONIOS</h2>
+  <p class="mb-8 text-center">Haz clic en una persona para ver su testimonio</p>
+
+  <!-- Avatares superiores -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-10 items-end">
+    <img *ngFor="let testimonial of testimonials; let i = index" [src]="testimonial.img" (click)="selectTestimonial(i)"
+      [ngClass]="{
+      'w-full aspect-square object-cover rounded-full cursor-pointer transition-all duration-500': true,
+      'scale-110 opacity-100 animate__animated animate__zoomIn': selectedIndex === i,
+      'opacity-30 border-transparent': selectedIndex !== i
+    }" [alt]="testimonial.titulo" />
+  </div>
+
+  <!-- Testimonio seleccionado -->
+  <div class="text-center px-4 animate__animated animate__fadeIn">
+    <h3 class="text-2xl font-semibold text-dark-500 mb-4">{{ selectedTestimonial.titulo }}</h3>
+    <p class="italic max-w-xl mx-auto font-normal font-mono text-dark-500">"{{ selectedTestimonial.comentario }}"</p>
+  </div>
+</div>

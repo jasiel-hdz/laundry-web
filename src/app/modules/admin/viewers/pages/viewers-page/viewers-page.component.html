@@ -1,0 +1,26 @@
+<div class="grid grid-cols-1 gap-y-4 md:gap-y-6 w-full !h-auto">
+    
+  <app-card-count-day
+    title="Observadores Identificados"
+    [cardsCountDay]="cardsCountDay"
+  ></app-card-count-day>
+
+  <app-card-comparative-pay
+    title="Estado Emocional de los Usuarios en el Período"
+    [idPieChart]="idPieChart"
+    [dataChart]="dataPieChart"
+  ></app-card-comparative-pay>
+    
+    <app-card-week
+      [idBarChart]="idBarChart"
+      [dataChart]="barChartViewers"
+      [measurements]="['', 'Sec']"
+    ></app-card-week>
+    <app-ots-hours
+    [dataChart]="dataLineChart"
+    [idLineChart]="idLineChart"
+    [top3]="top3Ots"
+  ></app-ots-hours>
+    <!-- <app-watcher-count-chart></app-watcher-count-chart> -->
+    <!-- <app-watcher-anual-chart></app-watcher-anual-chart> -->
+  </div>

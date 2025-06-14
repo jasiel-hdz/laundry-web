@@ -1,0 +1,21 @@
+<div class="grid grid-cols-1 gap-y-4 md:gap-y-6 w-full !h-auto">
+  <app-card-count-day
+    title="Observadores No Identificados"
+    [cardsCountDay]="cardsCountDay"
+  ></app-card-count-day>
+  
+
+  <app-card-week
+    title="OTS gráfico semanal"
+    [idBarChart]="idBarChart"
+    [dataChart]="barChartOTS"
+  ></app-card-week>
+  
+  <app-ots-hours
+  [dataChart]="lineChartOTS"
+  [idLineChart]="idLineChart"
+  [top3]="top3Ots"
+  ></app-ots-hours>
+
+  <app-watcher-anual-chart></app-watcher-anual-chart>
+</div>

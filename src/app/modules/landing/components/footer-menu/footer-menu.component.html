@@ -1,0 +1,34 @@
+<footer class="w-full mx-auto bg-darkest-500 py-4">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center justify-center w-full px-4">
+
+    <div class="flex justify-center items-center">
+      <img class="h-20 w-auto cursor-pointer" src="images/logo/logo.png" alt="Fuse logo" (click)="goHome()" />
+    </div>
+
+    <div class="flex flex-col justify-center items-center md:items-start gap-3">
+      <div class="flex items-center gap-3">
+        <img src="images/telefono.svg" alt="" class="h-4 w-4">
+        <small class="text-lightest-500">33 3041 0442</small>
+      </div>
+      <div class="flex items-center gap-3">
+        <img src="images/ubicacion.svg" alt="" class="h-4 w-4">
+        <small class="text-lightest-500">Av. Iran 565, Los Pinos, 45120 Zapopan, Jal.</small>
+      </div>
+      <div class="flex items-center gap-3">
+        <img src="images/Icon feather-mail.svg" alt="" class="h-4 w-4">
+        <small class="text-brand-500 cursor-pointer">info&#64;laundryes.com</small>
+      </div>
+    </div>
+
+    <div class="flex flex-col items-center md:items-start justify-center relative pl-0 md:pl-8">
+      <span class="hidden md:block absolute left-0 h-[90%] border-l-2 border-dark-500"></span>
+      <div class="flex flex-col items-center md:items-start gap-1 z-10">
+        <small (click)="goTo('about')" class="text-lightest-500 underline cursor-pointer">Sobre nosotros</small>
+        <small (click)="goTo('delivery-policy')" class="text-lightest-500 underline cursor-pointer">Información de entrega</small>
+        <small (click)="goTo('privacy-policy')" class="text-lightest-500 underline cursor-pointer">Política de privacidad</small>
+        <small (click)="goTo('terms-conditions')" class="text-lightest-500 underline cursor-pointer">Términos y condiciones</small>
+      </div>
+    </div>
+
+  </div>
+</footer>

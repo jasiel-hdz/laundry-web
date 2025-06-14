@@ -1,0 +1,18 @@
+<div class="mb-6">
+  <h1 class="font-bold text-3xl leading-none">{{title}}</h1>
+  <p class="text-gray-400">
+    "Aquí puedes ver los registros con conteos de observadores identificados correspondientes
+    <span class='font-semibold text-lg text-blue-500'> El día de hoy</span>."
+  </p>
+</div>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 w-full">
+  <div *ngFor="let item of cardsCountDay"  class="bg-card flex flex-col items-center justify-center w-full  p-2 md:p-4  shadow dark:border-b dark:bg-transparent dark:shadow-none rounded-2xl">
+    <h2 class="w-full font-semibold text-center mb-4">{{item.title}}</h2>
+    <h3 class="text-8xl font-semibold leading-none" [ngClass]="item.colorClass">{{item.primaryValue}}</h3>
+    <h4 class="font-medium text-lg" [ngClass]="item.colorClass">{{item.primaryValueText}}</h4>
+    <span class="mt-4">
+      <h4 class="text-gray-500">{{item.secondaryValueText}}<span class="text-gray-500 font-semibold text-lg">{{item.secondaryValue}}</span></h4>
+    </span>
+  </div>
+</div>
