@@ -1,0 +1,14 @@
+<app-breadcrumb></app-breadcrumb>
+<ng-container *ngFor="let item of heroServiceSections; let i = index">
+  <app-hero
+    [class]="item.class"
+    [title]="item.title"
+    [titleDescription]="item.titleDescription"
+    [imageUrl]="item.imageUrl"
+    [alt]="item.alt"
+    [contentTitle]="item.contentTitle"
+    [contentText]="item.contentText"
+    [direction]="item.direction"
+    [withMargin]="i === 0">
+  </app-hero>
+</ng-container>

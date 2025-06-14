@@ -1,4 +1,6 @@
-<div class="relative w-full  h-240 sm:h-120 md:h-90 bg-cover bg-center" style="background-image: url('images/banner-color.png')">
+<div class="relative w-full  h-240 sm:h-120 md:h-90 bg-cover bg-center" style="background-image: url('images/banner-color.png')"
+  [ngClass]="{'mt-16 lg:mt-32': withMargin}"
+>
   <!-- Overlay de color brand con opacidad -->
   <div class="absolute inset-0 bg-brand-500/95"></div>
 

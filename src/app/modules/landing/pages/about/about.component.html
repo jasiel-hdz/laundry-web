@@ -1,1 +1,26 @@
 <app-breadcrumb></app-breadcrumb>
+<app-hero
+  [title]="heroOurHistory.title"
+  [titleDescription]="heroOurHistory.titleDescription"
+  [imageUrl]="heroOurHistory.imageUrl"
+  [alt]="heroOurHistory.alt"
+  [contentTitle]="heroOurHistory.contentTitle"
+  [contentText]="heroOurHistory.contentText"
+  direction="left"
+  >
+</app-hero>
+<app-service-advantages
+  [advantages]="advantagesList">
+</app-service-advantages>
+<app-banner-color withMargin="true"></app-banner-color>
+<app-hero
+  class="mb-16 lg:mb-32"
+  [title]="heroDiscover.title"
+  [titleDescription]="heroDiscover.titleDescription"
+  [imageUrl]="heroDiscover.imageUrl"
+  [alt]="heroDiscover.alt"
+  [contentTitle]="heroDiscover.contentTitle"
+  [contentText]="heroDiscover.contentText"
+  direction="right"
+  >
+</app-hero>

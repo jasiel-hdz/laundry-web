@@ -17,6 +17,7 @@ const customPalettes = {
     // highlight: generatePalette('#70CF4A'),
     // brand: generatePalette('#8EC1D6'),
     brand: generatePalette('#29ABE2'),
+    brandDark: generatePalette('#0071BC'),
     darkest: generatePalette('#0F172A'),
     dark: generatePalette('#37476C'),
     mid: generatePalette('#CBD5E1'),

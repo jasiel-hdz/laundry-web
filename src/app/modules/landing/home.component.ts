@@ -7,7 +7,7 @@ import { FooterMenuComponent } from './components/footer-menu/footer-menu.compon
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
-  standalone   : true,
+  standalone: true,
   encapsulation: ViewEncapsulation.None,
   imports: [
     NavbarLandingComponent,

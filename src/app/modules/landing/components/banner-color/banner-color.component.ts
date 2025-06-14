@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, Input, OnInit } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
 
 @Component({
@@ -8,10 +9,11 @@ import { MatIcon } from '@angular/material/icon';
   standalone: true,
   imports: [
     MatIcon,
+    CommonModule,
   ]
 })
 export class BannerColorComponent implements OnInit {
-
+  @Input() withMargin: boolean =  false;
   constructor() { }
 
   ngOnInit() {
