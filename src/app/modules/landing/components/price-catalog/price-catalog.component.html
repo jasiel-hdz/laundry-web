@@ -1,0 +1,27 @@
+<section class="w-full pt-16 lg:pt-32 bg-light-500">
+  <div class="flex flex-col justify-center items-center mx-auto w-11/12 md:9/12 lg:w-8/12">
+    <h2 class="text-4xl font-bold text-brandDark-500 mb-4 leading-none">{{title}}</h2>
+    <p class="text-dark-500 mb-12">{{subtitle}}</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+      <div *ngFor="let item of catalog; let i = index"
+        class="p-6 rounded-2xl shadow transition duration-300 cursor-pointer border-2 border-brand-500 " [ngClass]="{
+             'bg-white': selectedCatalogIndex !== i,
+             'border-2 !border-brand-500': selectedCatalogIndex === i
+           }" (click)="selectCatalog(i)">
+        <h3 class="text-start text-xl font-semibold text-darkest-500 mb-2">{{ item.name }}</h3>
+        <p class="text-start text-5xl font-bold text-brand-600 mb-4">{{ item.price }}<span class="text-md">c/u</span>
+        </p>
+        <button class="bg-brand-500 text-white px-6 py-2 rounded-lg hover:bg-brand-600 transition mb-6 w-full">
+          Buy Plans
+        </button>
+        <ul class="text-dark-500 space-y-2">
+          <li *ngFor="let feature of item.features" class="flex items-start gap-2 border-b border-mid-200 ">
+            <mat-icon class="text-green-500 mt-0.5">check</mat-icon>
+            <span>{{ feature }}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

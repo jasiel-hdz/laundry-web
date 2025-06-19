@@ -8,6 +8,7 @@ import { OurServicesComponent } from '../../components/our-services/our-services
 import { BannerColorComponent } from '../../components/banner-color/banner-color.component';
 import { TestimonialsComponent } from '../../components/testimonials/testimonials.component';
 import { OurSocialNetworksComponent } from '../../components/our-social-networks/our-social-networks.component';
+import { PromoBannerComponent } from '../../components/promo-banner/promo-banner.component';
 
 @Component({
     selector: 'app-home-page',
@@ -24,6 +25,7 @@ import { OurSocialNetworksComponent } from '../../components/our-social-networks
         BannerColorComponent,
         TestimonialsComponent,
         OurSocialNetworksComponent,
+        PromoBannerComponent,
     ],
 
 })

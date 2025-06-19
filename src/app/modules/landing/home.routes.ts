@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 import { HomePageComponent } from './pages/home/home-page.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ServicesComponent } from './pages/services/services.component';
-import { PricingComponent } from './pages/pricing/pricing.component';
+import { PricingPageComponent } from './pages/pricing/pricing-page.component';
 import { ContactComponent } from './pages/contact/contact.component';
 
 export default [
@@ -24,6 +24,6 @@ export default [
     },
     {
         path: 'pricing',
-        component: PricingComponent,
+        component: PricingPageComponent,
     }
 ] as Routes;

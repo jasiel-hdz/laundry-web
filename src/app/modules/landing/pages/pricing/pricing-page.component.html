@@ -1,0 +1,18 @@
+<div class="bg-light-500">
+  <app-breadcrumb></app-breadcrumb>
+  <app-price-catalog
+    [title]="'OUR PRICING TABLE'"
+    [subtitle]="'Choose the plan that fits your needs best.'" 
+  [catalog]="price_catalog_list"></app-price-catalog>
+  <app-promo-banner
+    [title]="'Limited Time Offer!'"
+    [btnText]="'Full price list'"
+    [imageUrl]="'images/pages/pricing/promo-banner.png'"
+    [alt]="'Promotional Image'"
+    [reverse]="false"
+  ></app-promo-banner>
+  <app-price-detail
+    [title]="'MORE DETAIL PRICE'"
+    [subtitle]="'Detailed breakdown of our pricing plans.'"
+    ></app-price-detail>
+</div>

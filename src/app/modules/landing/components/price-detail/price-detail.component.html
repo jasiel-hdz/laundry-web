@@ -1,0 +1,30 @@
+<!-- price-list.component.html -->
+<section class="w-full bg-light-500 mt-16 lg:mt-32 pb-16 md:pb-32">
+  <div class="flex flex-col justify-center items-center mx-auto w-11/12 md:9/12 lg:w-8/12">
+    <div class="text-center mb-8 lg:mb-16">
+      <h1 class="text-4xl uppercase font-bold text-brandDark-500 mb-4 leading-none">{{title}}</h1>
+      <p class="text-lg text-gray-600">{{subtitle}}</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+      <div *ngFor="let item of priceDetailList" class="bg-white rounded-xl shadow p-4 w-full">
+        <h3 class="text-2xl font-semibold text-brand-600 mb-2 text-start">{{ item.title }}</h3>
+        <div class="h-1 w-20 bg-brand-500 mb-4"></div>
+
+        <ul class="space-y-2 p-4">
+          <li *ngFor="let feature of item.features"
+            class="flex items-center justify-between border-b border-gray-200 py-2">
+            <div class="flex items-center gap-1">
+              <mat-icon class="text-brand-500 text-base">check_circle</mat-icon>
+              <span class="text-dark-500">{{ feature.name }}</span>
+            </div>
+            <span class="text-dark-500 font-semibold">{{ feature.price }}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="text-dark-500 mt-8 text-center">Get discount 10% if you join our membership.<br>
+      Leather items (1 - 2 weeks finish). <br>
+      Don't worry if your items not listed here, <span class="text-brandDark-500 font-bold cursor-pointer">Send Us Message</span> and we will take care of it.</p>
+  </div>
+</section>
